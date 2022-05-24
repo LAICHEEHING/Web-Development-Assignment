@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UrbanMixology.master.cs" Inherits="MasterDesign.UrbanMixology" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+     <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+        <%--our custom css--%>
+    <link href="css/CustomStyleSheet.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 180px;
+            height: 180px;
+        }
+        .auto-style3 {
+            width: 100px;
+        }
+        .auto-style6 {
+            width: 50px;
+            height: 50px;
+        }
+        .auto-style7 {
+            width: 50px;
+            height: 50px;
+        }
+        .auto-style8 {
+            width: 530px;
+        }
+        .auto-style9 {
+            width: 530px;
+            height: 120px;
+            font-family: 'Agency FB';
+            font-size: 64px;
+        }
+        .auto-style11 {
+            width: 50px;
+            height: 120px;
+        }
+        .auto-style12 {
+            width: 50px;
+        }
+        .auto-style13 {
+            width: 55px;
+            height: 120px;
+        }
+        .auto-style14 {
+            width: 55px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+         <!-- Header Placeholder -->
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td rowspan="2" class="auto-style3">
+                        <img alt="UMlogo" class="auto-style2" src="img/logo.jpg" /></td>
+                    <td class="auto-style9">Urban Mixology</td>
+                    <td class="auto-style13">
+                        <a href="https://www.instagram.com/">
+                            <img alt="IGlogo" class="auto-style7" src="img/ig.png" />
+                        </a></td>
+                        
+                    <td class="auto-style13">
+                        <a href="https://www.facebook.com/">
+                            <img alt="FBlogo" class="auto-style6" src="img/fb.png" />
+                        </a></td>
+                    <td class="auto-style11">
+                        About Us</td>
+                </tr>
+                <tr>
+                    <td class="auto-style8">Motto</td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style14">Search</td>
+                    <td class="auto-style12">
+                        <asp:TextBox ID="Searchtxt" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+            </table>
+         </div>
+        <!-- Nav Bar Placeholder -->
+        <div>
+            <ul>
+                  <li><a href="HomePage.aspx">Home</a></li>
+                  <li><a href="Forum.aspx">Forum</a></li>
+                  <li><a href="Recipe.aspx">Recipe</a></li>
+                  <li style="float:right"><a class="active" href="#about">Login/Register</a></li>
+                  <li style="float:right"><a class="active" href="#about">Profile</a></li>
+                  <li style="float:right"><a class="active" href="#about">MyList</a></li>                  
+            </ul>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">About Us</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Privacy Policy</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Email</asp:LinkButton>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+    </form>
+</body>
+</html>

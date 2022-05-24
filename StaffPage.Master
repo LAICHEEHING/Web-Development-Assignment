@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StaffPage.Master.cs" Inherits="MasterDesign.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+      <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+        <%--our custom css--%>
+    <link href="css/CustomStyleSheet.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-image:url('/img/Background.jpg'); background-repeat:no-repeat; background-size:cover; height: 1000px; width: 1328px;"> 
+        <form id="form1" runat="server">
+            <div style="height: 630px; width: 1323px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+
+                <div style="height: 71px; width: 1332px; margin-left: 0px; margin-bottom: 0px;">
+            <br />
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Rounded MT Bold" Font-Size="X-Large" ForeColor="#CC9900" Text="Urban Mixology  ( Staff Page  )"></asp:Label>
+            <br />
+            <ul style="height: 61px; width: 1487px; margin-left: 1px; ">
+                <li><a href="StaffProfile.aspx" style="font-family: 'Arial Black'; font-size: large; font-weight: bold; font-style: italic; text-decoration: underline; font-variant: normal; color: #CC9900; height: 88px; width: 124px;">Profile</a></li>
+                <li><a href="ViewTopicPage.aspx" style="font-family: 'Arial Black'; font-size: large; font-weight: bold; font-style: italic; text-decoration: underline; font-variant: normal; color: #CC9900; height: 127px;">View </a></li>
+                <li><a href="ManageTopic.aspx" style="font-family: 'Arial Black'; font-size: large; font-weight: bold; font-style: italic; text-decoration: underline; font-variant: normal; color: #CC9900; height: 76px;">Manage</a></li>
+                <li><a href="StaffLogin.aspx" style="font-family: 'Arial Black'; font-size: large; font-weight: bold; font-style: italic; text-decoration: underline; font-variant: normal; color: #CC9900; height: 76px;">Log Out</a></li>
+            </ul>
+    <asp:ContentPlaceHolder ID="body" runat="server" >
+        <div style="height: 480px; width: 1190px; margin-left: 87px; margin-bottom: 0px">
+        </div>
+    </asp:ContentPlaceHolder>
+            <br />
+        </div>
+
+        </div>
+
+        </form>
+    </body>
+</html>
